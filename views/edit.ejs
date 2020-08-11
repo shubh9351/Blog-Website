@@ -1,0 +1,17 @@
+
+
+<%-include("partials/header")-%>
+<h1>Compose</h1>
+<form class="" action="/post/<%=id %>/edit" method="post">
+  <div class="form-group">
+    <label for="title">Title</label><br>
+   <input type="text" class="form-control" id="title" name="addTitle" value="<%= postTitle %>" style="width:1135px;"><br>
+     <label for="title">Author</label><br>
+    <input type="text" class="form-control" name="addAuthor" value="<%=postAuthor %>" style="width:1135px;"><br>
+    <label for="post">Post</label><br>
+    <textarea class="form-control"  name="addPost" value="" rows="10" cols="150"> <%= postContent %> </textarea>
+
+  </div>
+<button class="btn  btn-primary" type="submit" name="button">Publish</button>
+</form>
+<%-include("partials/footer")-%>

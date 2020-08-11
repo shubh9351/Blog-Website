@@ -1,0 +1,12 @@
+<%-include("partials/header")-%>
+
+<h1> <%= postTitle %> </h1>
+<p> Posted by:- <em><%= postAuthor %> </em></p>
+<p>  <%= postContent %> </p>
+
+<a href="/post/<%= id %>/edit"><button class="btn edit btn-primary" type="submit" name="button">Edit</button></a>
+<a href="/post/<%= id %>/delete"><button class="btn delete btn-danger" type="submit" name="button" value="<%= id %>">Delete</button></a>
+
+
+
+<%-include("partials/footer")-%>
